@@ -1,12 +1,23 @@
 ﻿using MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo.Classes;
 using System;
-using System.Collections.Generic;
+using Xunit.Abstractions;
 
 namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
 {
     public class TelevisaoModulo : Modulo
     {
-        private readonly ControleRemotoUniversal controleRemoto = new ControleRemotoUniversal();
+        private bool IsTest => testOutputHelper != null;
+        private readonly ITestOutputHelper testOutputHelper;
+        public readonly ControleRemotoUniversal controleRemoto = new ControleRemotoUniversal();
+        public int contadorDeExibicoes = 0;
+        public TelevisaoModulo()
+        {
+
+        }
+        public TelevisaoModulo(ITestOutputHelper testOutputHelper)
+        {
+            this.testOutputHelper = testOutputHelper;
+        }
         public void Executar()
         {
             var tvLG = new TelevisaoLG(true, 10, 15, 80);
@@ -18,11 +29,15 @@ namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
         private void Executar(params IComandosTelevisao[] televisoes)
         {
             controleRemoto.LimparTelevisoesSuportadas();
-            foreach (var tv in televisoes) 
-                controleRemoto.AdicionarTelevisaoSuportada(tv);
+            foreach (var tv in televisoes)
+                AdicionarTelevisaoAoControle(tv);
             ExecutarComandos();
-            Console.ReadLine();
-            Console.Clear();
+            if(!IsTest)
+            {
+                Console.Clear();
+                Console.ReadLine();
+            }
+            contadorDeExibicoes++;
         }
         private void ExecutarComandos()
         {
@@ -38,7 +53,7 @@ namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
         {
             Console.WriteLine(acao?.Method.Name ?? acaoComParametro?.Method.Name);
             acao?.Invoke();
-            acaoComParametro?.Invoke(LerParametroTrocaCanal());
+            acaoComParametro?.Invoke(IsTest ? 10 : LerParametroTrocaCanal());
             controleRemoto.ImprimirCanalVolume();
         }
 
@@ -55,6 +70,11 @@ namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
                 }
             } while (canalASerTrocado == int.MinValue);
             return canalASerTrocado;
+        }
+
+        public void AdicionarTelevisaoAoControle(IComandosTelevisao televisao)
+        {
+            controleRemoto.AdicionarTelevisaoSuportada(televisao);
         }
     }
 }

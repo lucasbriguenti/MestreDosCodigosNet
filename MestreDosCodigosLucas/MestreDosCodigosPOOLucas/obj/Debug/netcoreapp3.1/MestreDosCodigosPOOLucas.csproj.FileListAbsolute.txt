@@ -11,3 +11,5 @@ C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\net
 C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.dll
 C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.pdb
 C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.genruntimeconfig.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.csproj.CopyComplete

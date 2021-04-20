@@ -23,6 +23,7 @@ namespace MestreDosCodigosPOOLucas
 
                 Console.Clear();
                 _modulo.Executar();
+                Console.ReadLine();
             }
         }
         private static void DefinirModulo()

@@ -57,5 +57,6 @@ namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo.Classes
         {
             _televisoesSuportadas.ForEach(comando);
         }
+        public int QuantidadeTelevisoesSuportadas => _televisoesSuportadas.Count;
     }
 }

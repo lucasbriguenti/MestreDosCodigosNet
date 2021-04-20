@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5US0fDjG1VPO3G8X9pACo7x/68oO/bmpsB1Wz8RikpvI4TcdkLF4c9B9zPb65SURUvWN3SC+m98Q0PuQLo76qw==",
+  "dgSpecHash": "JMMdNNiQmF9WI9G8Ndt50P76K1Ftk7LBHN+6zdD8vvAO9XQzr2pvfp/SoXLE3+GRH7rpdeWkn3ow5/Cnz2qTzQ==",
   "success": true,
   "projectFilePath": "C:\\MestreDosCodigos\\MestreDosCodigosLucas\\MestreDosCodigosPOOLucas\\MestreDosCodigosPOOLucas.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas.briguenti\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,0 +1,13 @@
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.exe
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.deps.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.runtimeconfig.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.runtimeconfig.dev.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.pdb
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.csprojAssemblyReference.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.AssemblyInfoInputs.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.AssemblyInfo.cs
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.csproj.CoreCompileInputs.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.pdb
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosLucas.genruntimeconfig.cache

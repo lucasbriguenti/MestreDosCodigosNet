@@ -1,0 +1,13 @@
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.exe
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.deps.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.runtimeconfig.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.runtimeconfig.dev.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\bin\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.pdb
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.csprojAssemblyReference.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.AssemblyInfoInputs.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.AssemblyInfo.cs
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.csproj.CoreCompileInputs.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.pdb
+C:\MestreDosCodigos\MestreDosCodigosLucas\MestreDosCodigosPOOLucas\obj\Debug\netcoreapp3.1\MestreDosCodigosPOOLucas.genruntimeconfig.cache

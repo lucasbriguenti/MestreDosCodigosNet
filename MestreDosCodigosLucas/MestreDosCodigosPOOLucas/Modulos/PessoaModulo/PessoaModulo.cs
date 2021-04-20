@@ -10,6 +10,7 @@ namespace MestreDosCodigosPOOLucas.Modulos.PessoaModulo
         {
             var pessoa = new Pessoa("Lucas Briguenti", new DateTime(1996,03,02), 1.70);
             pessoa.ImprimirPessoa();
+            Console.ReadLine();
         }
     }
 }

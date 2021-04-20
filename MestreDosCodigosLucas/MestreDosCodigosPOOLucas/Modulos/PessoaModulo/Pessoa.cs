@@ -43,9 +43,9 @@ namespace MestreDosCodigosPOOLucas.Modulos.PessoaModulo
         public void ImprimirPessoa()
         {
             Console.WriteLine($"Pessoa: {Nome}");
-            Console.WriteLine($"Data de nascimento: {DataNascimento}");
-            Console.WriteLine($"Idade: {Idade}");
-            Console.WriteLine($"Altura: {Altura}");
+            Console.WriteLine($"Data de nascimento: {DataNascimento.ToShortDateString()}");
+            Console.WriteLine($"Idade: {Idade} anos");
+            Console.WriteLine($"Altura: {Altura}m");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo.Classes;
 using System;
+using System.Linq;
 using Xunit.Abstractions;
 
 namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
@@ -31,14 +32,23 @@ namespace MestreDosCodigosPOOLucas.Modulos.TelevisaoModulo
             controleRemoto.LimparTelevisoesSuportadas();
             foreach (var tv in televisoes)
                 AdicionarTelevisaoAoControle(tv);
+
+            LigarTelevisoes(televisoes);
             ExecutarComandos();
             if(!IsTest)
             {
-                Console.Clear();
                 Console.ReadLine();
+                Console.Clear();
             }
             contadorDeExibicoes++;
         }
+
+        private void LigarTelevisoes(IComandosTelevisao[] televisoes)
+        {
+            if (televisoes.All(tv => !tv.EstaLigada))
+                controleRemoto.LigarDesligar();
+        }
+
         private void ExecutarComandos()
         {
             ExecutaFuncaoEExibe(controleRemoto.AumentarVolume);

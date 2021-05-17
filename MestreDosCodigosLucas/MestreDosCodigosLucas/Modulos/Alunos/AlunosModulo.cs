@@ -14,11 +14,16 @@ namespace MestreDosCodigosLucas.Modulos.Alunos
         private void ExibirResultado()
         {
             Console.Clear();
-            Console.WriteLine("Alunos aprovados (Nota > 7): ");
-            foreach (var aluno in alunos)
-                if(aluno.Nota > 7)
-                    Console.WriteLine($"{aluno.Nome} com nota {aluno.Nota}");
+            Console.WriteLine(" ");
+            Console.WriteLine("Alunos aprovados (Media > 7): ");
+            alunos.ForEach(aluno =>
+            {
+                if (aluno.Media > 7)
+                    Console.WriteLine($"{aluno.Nome} com média {aluno.Media}");
+            });
+                
             Console.ReadLine();
+        
         }
         private void LerAlunos()
         {
@@ -27,17 +32,9 @@ namespace MestreDosCodigosLucas.Modulos.Alunos
                 var aluno = new Aluno();
                 Console.WriteLine("Digite o nome do aluno: ");
                 aluno.Nome = Console.ReadLine();
-                Console.WriteLine("Digite a nota do aluno: ");
-                var nota = 0m;
-                do
-                {
-                    if (!decimal.TryParse(Console.ReadLine(), out nota) || nota > 10)
-                    {
-                        Console.WriteLine("Nota inválida. Digite novamente");
-                        nota = 0;
-                    }
-                } while (nota == 0);
-                aluno.Nota = nota;
+                Console.WriteLine("Digite -1 para sair da inclusão de notas");
+
+                aluno.Notas = LerNotas();
                 alunos.Add(aluno);
                 Console.WriteLine("Tecle ESC para finalizar o cadastro de Alunos");
 
@@ -47,6 +44,29 @@ namespace MestreDosCodigosLucas.Modulos.Alunos
                 else
                     Console.Clear();
             }
+        }
+        private List<decimal> LerNotas()
+        {
+            var listaDeNotas = new List<decimal>();
+            while(true)
+            {
+                Console.WriteLine("Digite a nota do aluno: ");
+                var nota = decimal.MinValue;
+                do
+                {
+                    if (!decimal.TryParse(Console.ReadLine(), out nota) || nota > 10 || nota < -1)
+                    {
+                        Console.WriteLine("Nota inválida. Digite novamente");
+                        nota = decimal.MinValue;
+                    }
+                } while (nota == decimal.MinValue);
+
+                if (nota == -1)
+                    break;
+                else
+                    listaDeNotas.Add(nota);
+            }
+            return listaDeNotas;
         }
     }
 }

@@ -10,20 +10,25 @@ namespace MestreDosCodigosPOOLucas.Modulos.BancoModulo.Classes
         }
         public double TaxaDeOperacao { get; set; }
 
-        public new void Sacar(double valor)
+        public override void Depositar(double valor)
         {
-            base.Sacar(valor + TaxaDeOperacao);
+            var valorCalculado = valor - TaxaDeOperacao;
+            if (valorCalculado < Saldo)
+                Saldo += valorCalculado;
         }
-        public new void Depositar(double valor)
+        public override void Sacar(double valor)
         {
-            base.Depositar(valor - TaxaDeOperacao);
+            var valorCalculado = valor + TaxaDeOperacao;
+            if (valorCalculado < Saldo)
+                Saldo -= valorCalculado;
         }
-
         public void MostrarDados()
         {
             Console.WriteLine($"Conta Corrente\nNúmero da conta: {NumeroDaConta}");
             Console.WriteLine($"Saldo: {Saldo}");
             Console.WriteLine($"Taxa de Operação: {TaxaDeOperacao}\n");
         }
+
+
     }
 }

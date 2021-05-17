@@ -34,14 +34,28 @@ namespace MestreDosCodigosLucas.Modulos.Linq
         }
         private void ImprimirNumeroBuscado()
         {
-            var numeroASerBuscado = 4;
-            var numeroBuscado = BuscarNumero(numeroASerBuscado);
+            var numeroASerBuscado = LerParametroNumeroBuscado();
             Console.WriteLine("Retorne apenas o número informado.");
+            var numeroBuscado = BuscarNumero(numeroASerBuscado);
             if (numeroBuscado.HasValue)
                 Console.WriteLine($"Número retornado: {numeroBuscado.Value}");
             else
                 Console.WriteLine($"Não foi possível localizar o número {numeroASerBuscado} na lista");
             Console.ReadLine();
+        }
+        private int LerParametroNumeroBuscado()
+        {
+            Console.Write("Digite um número inteiro para ser buscado: ");
+            var numero = int.MinValue;
+            do
+            {
+                if (!int.TryParse(Console.ReadLine(), out numero) || numero < 0)
+                {
+                    Console.WriteLine("Número inválido. Digite novamente: ");
+                    numero = int.MinValue;
+                }
+            } while (numero == int.MinValue);
+            return numero;
         }
         private int? BuscarNumero(int numeroASerBuscado)
         {
@@ -101,7 +115,7 @@ namespace MestreDosCodigosLucas.Modulos.Linq
             var ordemDescricao = ordem == Ordem.Asc ? "crescente" : "descendente";
             Console.WriteLine($"Imprimir todos os números da lista na ordem {ordemDescricao}.");
 
-            if(ordem == Ordem.Asc)  listaDeInteiros.OrderBy(x => x).ToList().ForEach(n => Console.WriteLine(n));
+            if (ordem == Ordem.Asc) listaDeInteiros.OrderBy(x => x).ToList().ForEach(n => Console.WriteLine(n));
             else listaDeInteiros.OrderByDescending(x => x).ToList().ForEach(n => Console.WriteLine(n));
 
             Console.ReadLine();
@@ -119,7 +133,7 @@ namespace MestreDosCodigosLucas.Modulos.Linq
         private void LerParametros()
         {
             Console.WriteLine("Digite 0 para para a inserção.");
-            while(true)
+            while (true)
             {
                 Console.Write("Digite um número inteiro: ");
                 int numero = int.MinValue;

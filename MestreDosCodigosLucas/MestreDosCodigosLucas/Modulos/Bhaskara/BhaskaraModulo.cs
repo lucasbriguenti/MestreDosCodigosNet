@@ -8,12 +8,12 @@ namespace MestreDosCodigosLucas.Modulos.Bhaskara
         public void Executar()
         {
             LerParametros();
-            double delta = (b * b) * (-4) * a * c;
+            double delta = (b * b) - (4 * a * c);
+            double raiz = Math.Sqrt(delta);
+            var x1 = ((-(b)) + raiz) / (2 * a);
+            var x2 = ((-(b)) - raiz) / (2 * a);
 
-            double x1 = ((-b) + Math.Sqrt(delta)) / 2 * a;
-            double x2 = ((-b) - Math.Sqrt(delta)) / 2 * a;
-
-            if(!double.IsNaN(x1) && !double.IsNaN(x2))
+            if (!double.IsNaN(x1) && !double.IsNaN(x2))
             {
                 Console.WriteLine("O resultado do x linha é :" + Math.Round(x1));
                 Console.WriteLine("Já o resultado de x duas linha é:" + Math.Round(x2));

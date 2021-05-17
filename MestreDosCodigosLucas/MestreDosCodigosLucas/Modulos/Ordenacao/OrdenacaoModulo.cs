@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MestreDosCodigosLucas.Modulos.Ordenacao
 {
@@ -16,6 +15,7 @@ namespace MestreDosCodigosLucas.Modulos.Ordenacao
             decimais.OrderBy(x => x).ToList().ForEach(n => Console.WriteLine(n));
             Console.WriteLine("Números ordenados decrescente: ");
             decimais.OrderByDescending(x => x).ToList().ForEach(n => Console.WriteLine(n));
+            Console.ReadLine();
         }
 
         private void LerParametros()

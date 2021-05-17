@@ -10,10 +10,20 @@ namespace MestreDosCodigosPOOLucas.Modulos.BancoModulo.Classes
         {
             Limite = limite;
         }
-        public new void Sacar(double valor)
+        public void MostrarDados()
         {
-            if(valor <= Saldo)
-                base.Sacar(valor);
+            Console.WriteLine($"Conta Especial\nNúmero da conta: {NumeroDaConta}");
+            Console.WriteLine($"Saldo: {Saldo}");
+            Console.WriteLine($"Limite: {Limite}\n");
+        }
+
+        public override void Sacar(double valor)
+        {
+            if (valor <= Saldo)
+            {
+                if (valor < Saldo)
+                    Saldo -= valor;
+            }
             else
             {
                 var valorComLimite = valor - Limite;
@@ -22,12 +32,10 @@ namespace MestreDosCodigosPOOLucas.Modulos.BancoModulo.Classes
             }
         }
 
-        public void MostrarDados()
+        public override void Depositar(double valor)
         {
-            Console.WriteLine($"Conta Especial\nNúmero da conta: {NumeroDaConta}");
-            Console.WriteLine($"Saldo: {Saldo}");
-            Console.WriteLine($"Limite: {Limite}\n");
+            if (valor > 0)
+                Saldo += valor;
         }
-
     }
 }

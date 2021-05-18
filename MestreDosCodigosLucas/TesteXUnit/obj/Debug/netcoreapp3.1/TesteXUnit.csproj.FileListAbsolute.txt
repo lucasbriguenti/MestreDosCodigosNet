@@ -103,3 +103,9 @@ C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\obj\Debug\netcoreapp3.1\Tes
 C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\obj\Debug\netcoreapp3.1\TesteXUnit.dll
 C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\obj\Debug\netcoreapp3.1\TesteXUnit.pdb
 C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\obj\Debug\netcoreapp3.1\TesteXUnit.genruntimeconfig.cache
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.deps.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.runtimeconfig.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.runtimeconfig.dev.json
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.exe
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.dll
+C:\MestreDosCodigos\MestreDosCodigosLucas\TesteXUnit\bin\Debug\netcoreapp3.1\MestreDosCodigosLucas.pdb

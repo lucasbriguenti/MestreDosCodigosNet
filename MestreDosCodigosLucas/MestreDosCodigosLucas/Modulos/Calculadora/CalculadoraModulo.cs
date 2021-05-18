@@ -5,6 +5,7 @@ namespace MestreDosCodigosLucas.Modulos.Calculadora
     public class CalculadoraModulo : Modulo
     {
         private double primeiroValor = 0, segundoValor = 0;
+        private readonly Calculador calculador = new Calculador();
 
         public void Executar()
         {
@@ -45,27 +46,28 @@ namespace MestreDosCodigosLucas.Modulos.Calculadora
         }
 
         private void ImprimirResultado(FuncaoCalculadora funcao)
-        { 
+        {
+            var resultado = calculador.Calcular(primeiroValor, segundoValor, funcao);
             switch (funcao)
             {
                 case FuncaoCalculadora.Soma:
                     {
-                        Console.WriteLine($"Soma: {primeiroValor + segundoValor}");
+                        Console.WriteLine($"Soma: {resultado}");
                         break;
                     }
                 case FuncaoCalculadora.Subtracao:
                     {
-                        Console.WriteLine($"Subtração: {primeiroValor - segundoValor}");
+                        Console.WriteLine($"Subtração: {resultado}");
                         break;
                     }
                 case FuncaoCalculadora.Multiplicacao:
                     {
-                        Console.WriteLine($"Multiplicação: {primeiroValor * segundoValor}");
+                        Console.WriteLine($"Multiplicação: {resultado}");
                         break;
                     }
                 case FuncaoCalculadora.Divisao:
                     {
-                        Console.WriteLine($"Divisão: {primeiroValor / segundoValor}");
+                        Console.WriteLine($"Divisão: {resultado}");
                         break;
                     }
                 case FuncaoCalculadora.ParOuImpar:

@@ -1812,6 +1812,16 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "MestreDosCodigosLucas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MestreDosCodigosLucas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MestreDosCodigosLucas.dll": {}
+        }
+      },
       "MestreDosCodigosPOOLucas/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6160,6 +6170,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "MestreDosCodigosLucas/1.0.0": {
+      "type": "project",
+      "path": "../MestreDosCodigosLucas/MestreDosCodigosLucas.csproj",
+      "msbuildProject": "../MestreDosCodigosLucas/MestreDosCodigosLucas.csproj"
+    },
     "MestreDosCodigosPOOLucas/1.0.0": {
       "type": "project",
       "path": "../MestreDosCodigosPOOLucas/MestreDosCodigosPOOLucas.csproj",
@@ -6168,6 +6183,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MestreDosCodigosLucas >= 1.0.0",
       "MestreDosCodigosPOOLucas >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Moq >= 4.16.1",
@@ -6203,6 +6219,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\MestreDosCodigos\\MestreDosCodigosLucas\\MestreDosCodigosLucas\\MestreDosCodigosLucas.csproj": {
+              "projectPath": "C:\\MestreDosCodigos\\MestreDosCodigosLucas\\MestreDosCodigosLucas\\MestreDosCodigosLucas.csproj"
+            },
             "C:\\MestreDosCodigos\\MestreDosCodigosLucas\\MestreDosCodigosPOOLucas\\MestreDosCodigosPOOLucas.csproj": {
               "projectPath": "C:\\MestreDosCodigos\\MestreDosCodigosLucas\\MestreDosCodigosPOOLucas\\MestreDosCodigosPOOLucas.csproj"
             }

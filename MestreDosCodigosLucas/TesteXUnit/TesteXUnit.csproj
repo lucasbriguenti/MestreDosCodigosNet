@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MestreDosCodigosLucas\MestreDosCodigosLucas.csproj" />
     <ProjectReference Include="..\MestreDosCodigosPOOLucas\MestreDosCodigosPOOLucas.csproj" />
   </ItemGroup>
 

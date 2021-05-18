@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "TesteXUnit/1.0.0": {
         "dependencies": {
+          "MestreDosCodigosLucas": "1.0.0",
           "MestreDosCodigosPOOLucas": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "Moq": "4.16.1",
@@ -1193,6 +1194,11 @@
         }
       },
       "xunit.runner.visualstudio/2.4.3": {},
+      "MestreDosCodigosLucas/1.0.0": {
+        "runtime": {
+          "MestreDosCodigosLucas.dll": {}
+        }
+      },
       "MestreDosCodigosPOOLucas/1.0.0": {
         "dependencies": {
           "xunit.abstractions": "2.0.3"
@@ -1908,6 +1914,11 @@
       "sha512": "sha512-kZZSmOmKA8OBlAJaquPXnJJLM9RwQ27H7BMVqfMLUcTi9xHinWGJiWksa3D4NEtz0wZ/nxd2mogObvBgJKCRhQ==",
       "path": "xunit.runner.visualstudio/2.4.3",
       "hashPath": "xunit.runner.visualstudio.2.4.3.nupkg.sha512"
+    },
+    "MestreDosCodigosLucas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MestreDosCodigosPOOLucas/1.0.0": {
       "type": "project",

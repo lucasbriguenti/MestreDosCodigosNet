@@ -6,7 +6,7 @@ namespace TesteXUnit.Tests
     public class CalculadorTests
     {
         private readonly Calculador _calculador;
-        private double valor1, valor2;
+        private readonly double valor1, valor2;
 
         public CalculadorTests()
         {
